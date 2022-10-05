@@ -1,16 +1,16 @@
 BasicGame block_size=5
 	SpriteSet
-		sword > Flicker color=LIGHTGRAY limit=1 singleton=True img=oryx/pickaxe
-		wall > Immovable autotiling=true img=oryx/dirtWall_0
-		dirt > Immovable color=BROWN img=oryx/backLBrown
-		exitdoor > Immovable color=GREEN img=oryx/door2
-		diamond > Resource color=YELLOW limit=10 shrinkfactor=0.25 img=oryx/diamond3
-		boulder > Missile orientation=DOWN color=GRAY speed=0.2 img=oryx/mineral1
+		sword > Flicker color=LIGHTGRAY limit=1 singleton=True img="oryx/pickaxe"
+		wall > Immovable autotiling=true img="oryx/dirtWall_0"
+		dirt > Immovable color=BROWN img="oryx/backLBrown"
+		exitdoor > Immovable color=GREEN img="oryx/door2"
+		diamond > Resource color=YELLOW limit=10 shrinkfactor=0.25 img="oryx/diamond3"
+		boulder > Missile orientation=DOWN color=GRAY speed=0.2 img="oryx/mineral1"
 		moving >
-			avatar  > ShootAvatar   stype=sword img=oryx/spelunky_0
+			avatar  > ShootAvatar   stype=sword img="oryx/spelunky_0"
 			enemy > RandomNPC
-				crab > color=RED img=oryx/scorpion2
-				butterfly > color=PINK img=oryx/bat2
+				crab > color=RED img="oryx/scorpion2"
+				butterfly > color=PINK img="oryx/bat2"
 	LevelMapping
 		. > dirt
 		E > exitdoor

@@ -1,24 +1,24 @@
 BasicGame block_size=10
     SpriteSet
-        grass > Immovable img=oryx/grass_0 hidden=True
-        highway > Immovable img=newset/highway hidden=True
+        grass > Immovable img="oryx/grass_0" hidden=True
+        highway > Immovable img="newset/highway" hidden=True
 
-        forestDense > SpawnPoint stype=log prob=0.4  cooldown=10 img=newset/water5
-        forestSparse > SpawnPoint stype=log prob=0.1  cooldown=5 img=newset/water5
+        forestDense > SpawnPoint stype=log prob=0.4  cooldown=10 img="newset/water5"
+        forestSparse > SpawnPoint stype=log prob=0.1  cooldown=5 img="newset/water5"
         structure > Immovable
-            water > color=BLUE img=newset/water2_1
-            goal  > color=GREEN img=newset/exit2
-        log    > Missile   orientation=LEFT  speed=0.1 color=BROWN img=newset/log
+            water > color=BLUE img="newset/water2_1"
+            goal  > color=GREEN img="newset/exit2"
+        log    > Missile   orientation=LEFT  speed=0.1 color=BROWN img="newset/log"
         truck  >
             rightTruck  > Missile   orientation=RIGHT
-                fastRtruck  > speed=0.2  color=ORANGE img=newset/car3R
-                slowRtruck  > speed=0.1  color=RED img=newset/car4R
+                fastRtruck  > speed=0.2  color=ORANGE img="newset/car3R"
+                slowRtruck  > speed=0.1  color=RED img="newset/car4R"
             leftTruck  > Missile   orientation=LEFT
-                fastLtruck  > speed=0.2  color=ORANGE img=newset/car3
-                slowLtruck  > speed=0.1  color=RED img=newset/car4
+                fastLtruck  > speed=0.2  color=ORANGE img="newset/car3"
+                slowLtruck  > speed=0.1  color=RED img="newset/car4"
 
-        avatar > MovingAvatar img=newset/girl1
-        wall > Immovable color=BLACK img=oryx/tree2
+        avatar > MovingAvatar img="newset/girl1"
+        wall > Immovable color=BLACK img="oryx/tree2"
 
         # Not actually used as a sprite
         safety > Resource
