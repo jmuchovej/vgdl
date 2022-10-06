@@ -32,37 +32,22 @@ wwwwwwwwwwwwwwww
 
 ![level play](examples/continuousphysics/left_to_right_play.png)
 
-PyVGDL aims to be an engine first,
-interfacing with
-different frameworks
-such as OpenAI Gym ([gym_vgdl](https://github.com/EndingCredits/gym_vgdl))
-and [pybrain](vgdl/interfaces/pybrain.py).
+PyVGDL interfaces with [Gymnasium][gym-repo] (formerly OpenAI Gym). Support for
+[PettingZoo][pettingzoo-repo] is planned.
 
+[gym-repo]: https://github.com/farama-foundation/gymnasium
+[pettingzoo-repo]: https://github.com/farama-foundation/pettingzoo
 
 ## Installation
-The easiest way to install VGDL as a library
-with all its dependencies
-is to run
+The easiest way to install VGDL as a library with all its dependencies is to run
 ```bash
-pip install 'git+https://github.com/rubenvereecken/py-vgdl/#egg=vgdl[all]'
-```
-Alternatively,
-if you know you will only be using
-the PyBrain or OpenAI Gym interface,
-run one of these
-to get just the necessary dependencies.
-```bash
-# Gym
-pip install 'git+https://github.com/rubenvereecken/py-vgdl/#egg=vgdl[gym]'
-# PyBrain
-pip install 'git+https://github.com/rubenvereecken/py-vgdl/#egg=vgdl[pybrain]'
+pip install vgdl
 ```
 
-The recommended way to install it if you want to play around
-with examples is through a local installation.
+You can use a local installation in the usual way.
 ```bash
-git clone https://github.com/rubenvereecken/py-vgdl
-pip install -e 'py-vgdl[all]'
+git clone https://github.com/jmuchovej/vgdl
+pip install -e vgdl
 ```
 
 ### Dependencies
@@ -72,15 +57,12 @@ This is so we can have nice things.
 
 ## How do I use it?
 
-PyVGDL is excellent for designing your own problem environments
-that still share some standard characteristics.
-It supports grid phyics and
-continuous phyics.
+PyVGDL is excellent for designing your own problem environments that still 
+share some standard characteristics. It supports grid phyics and continuous
+phyics.
 
-You probably want to use
-one of several standard interfaces:
-- [OpenAI Gym interface](vgdl/interfaces/gym)
-- [PyBrain interface](vgdl/interfaces/pybrain)
+You probably want to use one of several standard interfaces:
+- [OpenAI Gym interface](vgdl/interfaces/gymnasium)
 
 Read ahead to figure out how best to get started with either.
 

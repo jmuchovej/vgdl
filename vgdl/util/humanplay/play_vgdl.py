@@ -10,7 +10,7 @@ import logging
 
 import gymnasium as gym
 
-import vgdl.interfaces.gym
+import vgdl.interfaces.gymnasium
 from .human import HumanVGDLController
 
 THIS_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -22,7 +22,7 @@ def register_vgdl_env(domain_file, level_file, observer=None, blocksize=None):
 
     register(
         id=env_name,
-        entry_point='vgdl.interfaces.gym:VGDLEnv',
+        entry_point='vgdl.interfaces.gymnasium:VGDLEnv',
         kwargs={
             'game_file': domain_file,
             'level_file': level_file,

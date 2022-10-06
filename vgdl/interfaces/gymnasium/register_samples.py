@@ -1,6 +1,6 @@
 import gymnasium as gym
 from gymnasium.envs.registration import register
-from vgdl.interfaces.gym import VGDLEnv
+from vgdl.interfaces.gymnasium import VGDLEnv
 import os
 
 # Location of sample games
@@ -57,7 +57,7 @@ def register_sample_games():
                 name='vgdl_{}{}-v0'.format(game, suffix)
                 register(
                     id=name,
-                    entry_point='vgdl.interfaces.gym:VGDLEnv',
+                    entry_point='vgdl.interfaces.gymnasium:VGDLEnv',
                     kwargs={
                         'game_file': os.path.join(games_path, game + '.txt'),
                         'level_file': os.path.join(games_path, game + '_lvl0.txt'),
